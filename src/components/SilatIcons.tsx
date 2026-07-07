@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/assets';
 
 // Configuration for Custom Hukuman Icons - Users can upload PNG/JPG/SVG directly through the AI Studio file explorer and reference the paths here.
 export const CUSTOM_HUKUMAN_ICONS = {
@@ -67,7 +68,7 @@ export const HukumanIconWrapper: React.FC<HukumanIconProps> = ({
 
   return (
     <img
-      src={customSrc}
+      src={getAssetUrl(customSrc)}
       alt={alt}
       className={`${className || ''} object-contain mx-auto max-w-full max-h-full`}
       onError={() => {
