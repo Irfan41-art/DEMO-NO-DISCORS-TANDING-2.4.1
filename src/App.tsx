@@ -2452,7 +2452,7 @@ export default function App() {
                 }`}>
                   <img
                     id="brand-logo-discors-landing"
-                    src="/logodiscorsgrid.svg"
+                    src="logodiscorsgrid.svg"
                     alt="DISCORS - Digital Scoring Pencak Silat"
                     className={`object-contain filter drop-shadow-[0_4px_12px_rgba(168,85,247,0.25)] hover:scale-105 transition-all duration-300 ${
                       isFullscreen ? 'h-24 sm:h-32 md:h-40 lg:h-48 xl:h-64 2xl:h-72' : 'h-44 sm:h-56 md:h-64 lg:h-72'
@@ -3166,7 +3166,7 @@ export default function App() {
                 <div className="flex-1 min-h-0 flex items-center justify-center w-full py-2 transition-all duration-300">
                   <img
                     id="img-logo-discors-grid"
-                    src="/logodiscorsgrid.svg"
+                    src="logodiscorsgrid.svg"
                     alt="Logo Discors Grid"
                     referrerPolicy="no-referrer"
                     className={`object-contain max-w-full opacity-80 hover:opacity-100 transition-opacity duration-200 filter drop-shadow-[0_0_15px_rgba(11,211,211,0.25)] ${
