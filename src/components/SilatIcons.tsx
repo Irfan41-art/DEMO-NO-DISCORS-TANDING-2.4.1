@@ -2,23 +2,23 @@ import React from 'react';
 
 // Configuration for Custom Hukuman Icons - Users can upload PNG/JPG/SVG directly through the AI Studio file explorer and reference the paths here.
 export const CUSTOM_HUKUMAN_ICONS = {
-  Binaan1: "/assets/binaan1.svg?v=15",      // Masukkan path untuk Binaan 1 (contoh: "/assets/binaan1.png")
-  Binaan2: "/assets/binaan2.svg?v=15",      // Masukkan path untuk Binaan 2
-  Teguran1: "/assets/teguran1.svg?v=15",     // Masukkan path untuk Teguran 1
-  Teguran2: "/assets/teguran2.svg?v=15",     // Masukkan path untuk Teguran 2
-  Peringatan1: "/assets/peringatan1.svg?v=15",  // Masukkan path untuk Peringatan 1
-  Peringatan2: "/assets/peringatan2.svg?v=15",  // Masukkan path untuk Peringatan 2
+  Binaan1: "assets/binaan1.svg?v=15",      // Masukkan path untuk Binaan 1 (contoh: "assets/binaan1.png")
+  Binaan2: "assets/binaan2.svg?v=15",      // Masukkan path untuk Binaan 2
+  Teguran1: "assets/teguran1.svg?v=15",     // Masukkan path untuk Teguran 1
+  Teguran2: "assets/teguran2.svg?v=15",     // Masukkan path untuk Teguran 2
+  Peringatan1: "assets/peringatan1.svg?v=15",  // Masukkan path untuk Peringatan 1
+  Peringatan2: "assets/peringatan2.svg?v=15",  // Masukkan path untuk Peringatan 2
   Disqualification: "", // Masukkan path untuk Diskualifikasi
   Jatuhan: "",       // Masukkan path untuk Jatuhan
-  Punch: "/assets/punch.svg?v=15",
-  Kick: "/assets/kick.svg?v=15"
+  Punch: "assets/punch.svg?v=15",
+  Kick: "assets/kick.svg?v=15"
 };
 
 // Configuration for Custom Background/Theme Silhouettes - Users can upload custom images/PNG/SVGs directly to the root or assets folder and map them here.
 export const CUSTOM_BACKGROUND_SILHOUETTES = {
-  Stance: "/assets/pesilat2.png?v=15", // Masukkan path contoh: "/assets/stance.png" (kosongkan jika ingin memakai siluet asli bawaan)
-  Kick: "/assets/pesilat1.png?v=15",   // Masukkan path contoh: "/assets/kick.png" (kosongkan jika ingin memakai siluet asli bawaan)
-  CenterArt: "/assets/temadiscors.png?v=15" // Masukkan path contoh: "/assets/center.png" (kosongkan jika ingin memakai ornamen lencana asli bawaan)
+  Stance: "assets/pesilat2.png?v=15", // Masukkan path contoh: "assets/stance.png" (kosongkan jika ingin memakai siluet asli bawaan)
+  Kick: "assets/pesilat1.png?v=15",   // Masukkan path contoh: "assets/kick.png" (kosongkan jika ingin memakai siluet asli bawaan)
+  CenterArt: "assets/temadiscors.png?v=15" // Masukkan path contoh: "assets/center.png" (kosongkan jika ingin memakai ornamen lencana asli bawaan)
 };
 
 // Persistent cache of failed image URLs to prevent infinite reloading and flickering in rapid React rendering updates.

@@ -427,33 +427,33 @@ export default function App() {
   useEffect(() => {
     const assetsToPreload = [
       // Standard roots
-      "/binaan1.svg",
-      "/binaan2.svg",
-      "/teguran1.svg",
-      "/teguran2.svg",
-      "/peringatan1.svg",
-      "/peringatan2.svg",
-      "/punch.svg",
-      "/kick.svg",
-      "/pesilatkiri.svg",
-      "/pesilatkanan.svg",
-      "/pesilat1.png",
-      "/pesilat2.png",
-      "/temadiscors.png",
+      "binaan1.svg",
+      "binaan2.svg",
+      "teguran1.svg",
+      "teguran2.svg",
+      "peringatan1.svg",
+      "peringatan2.svg",
+      "punch.svg",
+      "kick.svg",
+      "pesilatkiri.svg",
+      "pesilatkanan.svg",
+      "pesilat1.png",
+      "pesilat2.png",
+      "temadiscors.png",
       // /assets/ routes
-      "/assets/binaan1.svg",
-      "/assets/binaan2.svg",
-      "/assets/teguran1.svg",
-      "/assets/teguran2.svg",
-      "/assets/peringatan1.svg",
-      "/assets/peringatan2.svg",
-      "/assets/punch.svg",
-      "/assets/kick.svg",
-      "/assets/pesilat1.png",
-      "/assets/pesilat2.png",
-      "/assets/pesilatkiri.svg",
-      "/assets/pesilatkanan.svg",
-      "/assets/temadiscors.png"
+      "assets/binaan1.svg",
+      "assets/binaan2.svg",
+      "assets/teguran1.svg",
+      "assets/teguran2.svg",
+      "assets/peringatan1.svg",
+      "assets/peringatan2.svg",
+      "assets/punch.svg",
+      "assets/kick.svg",
+      "assets/pesilat1.png",
+      "assets/pesilat2.png",
+      "assets/pesilatkiri.svg",
+      "assets/pesilatkanan.svg",
+      "assets/temadiscors.png"
     ].map(url => url.includes('?') ? url : `${url}?v=15`);
 
     // Dynamic customIcons from state
@@ -1923,7 +1923,7 @@ export default function App() {
             <div className="flex flex-col items-center select-none pt-2 pb-1">
               <img
                 id="brand-logo-discors-license"
-                src="/assets/temadiscors.png?v=15"
+                src="assets/temadiscors.png?v=15"
                 alt="DISCORS - Digital Scoring Pencak Silat"
                 className="h-32 object-contain filter drop-shadow-[0_4px_12px_rgba(168,85,247,0.25)] hover:scale-105 transition-transform duration-300"
                 referrerPolicy="no-referrer"
@@ -2508,7 +2508,7 @@ export default function App() {
                   <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <img 
                     id="img-grid-sekretaris"
-                    src="/sekretaris.png" 
+                    src="sekretaris.png" 
                     alt="SEKRETARIS" 
                     referrerPolicy="no-referrer"
                     className="w-full h-auto object-contain rounded-xl max-h-56 transition-transform duration-300 group-hover:scale-[1.03]"
@@ -2531,7 +2531,7 @@ export default function App() {
                   <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <img 
                     id="img-grid-dewan"
-                    src="/dewan.png" 
+                    src="dewan.png" 
                     alt="DEWAN" 
                     referrerPolicy="no-referrer"
                     className="w-full h-auto object-contain rounded-xl max-h-56 transition-transform duration-300 group-hover:scale-[1.03]"
@@ -2554,7 +2554,7 @@ export default function App() {
                   <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <img 
                     id="img-grid-juri"
-                    src="/juri.png" 
+                    src="juri.png" 
                     alt="JURI" 
                     referrerPolicy="no-referrer"
                     className="w-full h-auto object-contain rounded-xl max-h-56 transition-transform duration-300 group-hover:scale-[1.03]"
@@ -2577,7 +2577,7 @@ export default function App() {
                   <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <img 
                     id="img-grid-monitor"
-                    src="/monitor.png" 
+                    src="monitor.png" 
                     alt="MONITOR" 
                     referrerPolicy="no-referrer"
                     className="w-full h-auto object-contain rounded-xl max-h-56 transition-transform duration-300 group-hover:scale-[1.03]"
@@ -8504,8 +8504,8 @@ export default function App() {
             }`}>
               {/* Gambar Pesilat Kiri (Pojok Kiri Ujung Grid) */}
               <img 
-                src="/assets/pesilatkiri.svg?v=15" 
-                onError={(e) => { e.currentTarget.src = "/assets/pesilat1.png?v=15"; }}
+                src="assets/pesilatkiri.svg?v=15" 
+                onError={(e) => { e.currentTarget.src = "assets/pesilat1.png?v=15"; }}
                 alt="Pesilat Kiri" 
                 className="absolute left-0 bottom-0 h-full w-auto object-contain pointer-events-none z-0"
                 referrerPolicy="no-referrer"
@@ -8539,8 +8539,8 @@ export default function App() {
 
               {/* Gambar Pesilat Kanan (Pojok Kanan Ujung Grid, berada di belakang tombol fullscreen jika ada) */}
               <img 
-                src="/assets/pesilatkanan.svg?v=15" 
-                onError={(e) => { e.currentTarget.src = "/assets/pesilat2.png?v=15"; }}
+                src="assets/pesilatkanan.svg?v=15" 
+                onError={(e) => { e.currentTarget.src = "assets/pesilat2.png?v=15"; }}
                 alt="Pesilat Kanan" 
                 className="absolute right-0 bottom-0 h-full w-auto object-contain pointer-events-none z-0"
                 referrerPolicy="no-referrer"
@@ -8804,7 +8804,7 @@ export default function App() {
                     : "w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 flex items-center justify-center p-0 bg-transparent border-none transition-all duration-300 transform hover:scale-102"
                   }>
                     <img 
-                      src={matchState.logoKiri || "/assets/temadiscors.png?v=15"} 
+                      src={matchState.logoKiri || "assets/temadiscors.png?v=15"} 
                       alt="Logo Kiri" 
                       className="max-h-full max-w-full object-contain transition-transform duration-300"
                       referrerPolicy="no-referrer"
@@ -8853,7 +8853,7 @@ export default function App() {
                     : "w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 flex items-center justify-center p-0 bg-transparent border-none transition-all duration-300 transform hover:scale-102"
                   }>
                     <img 
-                      src={matchState.logoKanan || "/assets/temadiscors.png?v=15"} 
+                      src={matchState.logoKanan || "assets/temadiscors.png?v=15"} 
                       alt="Logo Kanan" 
                       className="max-h-full max-w-full object-contain transition-transform duration-300"
                       referrerPolicy="no-referrer"
