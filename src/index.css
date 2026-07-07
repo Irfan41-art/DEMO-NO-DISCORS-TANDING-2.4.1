@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-purple: #1a0033;
+  --color-brand-dark: #05000a;
+}
+
+/* Base style resets if any are needed */
+body {
+  background-color: #05000a;
+  color: #ffffff;
+}
+
+@keyframes border-beam-anim {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-border-beam {
+  stroke-dasharray: 25 75;
+  animation: border-beam-anim 6s linear infinite;
+}
+
+@keyframes text-gold-shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shine-text {
+  background: linear-gradient(
+    to right,
+    rgba(218, 165, 32, 0.35) 0%,
+    rgba(255, 215, 0, 0.9) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 215, 0, 0.9) 65%,
+    rgba(218, 165, 32, 0.35) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-gold-shine 3.5s linear infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.45));
+  padding-right: 0.25em;
+  margin-right: -0.25em;
+}
+
+/* Global select option styling to match deep blue-purple gradient theme and avoid white text-on-white bg issue */
+select option {
+  background-color: #12092e !important;
+  color: #ffffff !important;
+  font-family: inherit;
+  font-weight: 600;
+}
+

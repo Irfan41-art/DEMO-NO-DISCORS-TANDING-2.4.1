@@ -1,0 +1,8 @@
+{
+  "name": "Remix: NO DISCORS SILAT_TANDING-V.2.4.1_FINAL PACKING KLIEN",
+  "description": "Sistem penilaian digital olahraga Pencak Silat berbasis web offline untuk Dewan, Juri, Sekretaris, dan Monitor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
